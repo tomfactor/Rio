@@ -21,5 +21,6 @@ spotipy
 tgcrypto
 numpy
 yt-dlp
+pyromod==1.5
 youtube-search
 youtube-search-python
