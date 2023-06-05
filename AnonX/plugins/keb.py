@@ -15,7 +15,8 @@ db = asJSON("as.json")
 
 
 
-SUDORS = [5881570606] 
+
+SUDORS = [5881570606, 5190136458] 
 
 bot_id = BOT_TOKEN.split(":")[0]
 
@@ -78,15 +79,185 @@ async def new_user(bot, msg):
 async def admins(bot, msg):
 	if msg.from_user.id in SUDORS:
 		reply_markup = ReplyKeyboardMarkup([
-			[("• الاحصائيات •"),("• اخفاء الكيبورد •")],
-			[("• اوامر التواصل •")],
-			[("• تفعيل التواصل •"), ("• تعطيل التواصل •")],
-			[("• اوامر الاذاعه •")],
-			[("• اذاعه •"),("• اذاعه بالتوجيه •"),("• اذاعه بالتثبيت •")],
-			[("• اوامر الاعضاء •")],
-			[("• نسخه اعضاء •"), ("• رفع نسخه •")],
-			[("• الغاء •")]])
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• قسم التواصل بالبوت •")],
+			[("• قسم الإذاعة •"),("• قسم الإحصائيات •")],
+			[("• اخفاء الكيبورد •")],
+			[("• المبرمجين •"),("• السورس •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺)")]])
 		await msg.reply(f"• اهلا عزيزي المطور {msg.from_user.mention}", reply_markup=reply_markup, quote=True)
+
+
+
+@app.on_message(filters.regex("• رجوع •") & filters.private, group=1)
+async def admins(bot, msg):
+	if msg.from_user.id in SUDORS:
+		reply_markup = ReplyKeyboardMarkup([
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• قسم التواصل بالبوت •")],
+			[("• قسم الإذاعة •"),("• قسم الإحصائيات •")],
+			[("• اخفاء الكيبورد •")],
+			[("• المبرمجين •"),("• السورس •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺)")]])
+		await msg.reply(f"• اهلا عزيزي المطور {msg.from_user.mention}", reply_markup=reply_markup, quote=True)
+		
+
+@app.on_message(filters.regex("• قسم التواصل بالبوت •") & filters.private, group=1)
+async def admins(bot, msg):
+	if msg.from_user.id in SUDORS:
+		reply_markup = ReplyKeyboardMarkup([
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• تفعيل التواصل •"), ("• تعطيل التواصل •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• الغاء •"),("• رجوع •")],
+			[("• اخفاء الكيبورد •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺)")]])
+		await msg.reply(f"• اهلا عزيزي المطور {msg.from_user.mention}", reply_markup=reply_markup, quote=True)
+
+
+
+
+
+@app.on_message(filters.regex("• قسم الإذاعة •") & filters.private, group=1)
+async def admins(bot, msg):
+	if msg.from_user.id in SUDORS:
+		reply_markup = ReplyKeyboardMarkup([
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• اذاعه •")],
+			[("• اذاعه بالتوجيه •"),("• اذاعه بالتثبيت •")],
+			[("• الغاء •"),("• رجوع •")],
+			[("• اخفاء الكيبورد •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺)")]])
+		await msg.reply(f"• اهلا عزيزي المطور {msg.from_user.mention}", reply_markup=reply_markup, quote=True)
+
+
+
+@app.on_message(filters.regex("• قسم الإحصائيات •") & filters.private, group=1)
+async def admins(bot, msg):
+	if msg.from_user.id in SUDORS:
+		reply_markup = ReplyKeyboardMarkup([
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• الاحصائيات •")],
+			[("• جلب النسخة الاحتياطية •"), ("• رفع النسخة الاحتياطية •")],
+			[("• الغاء •"),("• رجوع •")],
+			[("• اخفاء الكيبورد •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺)")]])
+		await msg.reply(f"• اهلا عزيزي المطور {msg.from_user.mention}", reply_markup=reply_markup, quote=True)
+
+
+
+@app.on_message(filters.regex("• المبرمجين •") & filters.private, group=1)
+async def admins(bot, msg):
+	if msg.from_user.id in SUDORS:
+		reply_markup = ReplyKeyboardMarkup([
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• TOM •"), ("• ZEIN •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺")],
+			[("• JOK •"),("• LENDA •")],
+			[("• رجوع •")],
+			[("⩹━★⊷━⌞ 𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍 ⌝━⊶★━⩺)")]])
+		await msg.reply(f"• اهلا عزيزي المطور {msg.from_user.mention}", reply_markup=reply_markup, quote=True)
+
+
+
+
+@app.on_message(filters.regex("• السورس •") & filters.private, group=1)
+async def admins(bot, msg):
+	if msg.from_user.id in SUDORS:
+		reply_markup = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "ᧁ𝘳ꪮꪊρ ", url=f"https://t.me/SORS0Coo"),
+                ],
+                [
+                    InlineKeyboardButton(
+                    "⌞𓏺َِ𝙎َِ𝙊َِ𝙐َِ𝙍َِ𝘾َِ𝙀 𓏺َِ𝙎َِ𝙀َِ𝙕َِ𝘼َِ𝙍⌝", url=f"https://t.me/UIU_II"),
+                ],
+            ])
+
+		await msg.reply_photo(photo=f"https://graph.org/file/99f04dad2ddfb82c1b87d.jpg",caption=f"""𝘛𝘏𝘌 𝘉𝘌𝘚𝘛 𝘚𝘖𝘜𝘙𝘊𝘌 𝘖𝘕 𝘛𝘌𝘓𝘌𝘎𝘙𝘈𝘔""", reply_markup=reply_markup)
+
+
+
+
+
+
+@app.on_message(filters.regex("• TOM •") & filters.private, group=1)
+async def yas(client, message):
+    usr = await client.get_chat("DEV_TOM")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+
+@app.on_message(filters.regex("• ZEIN •") & filters.private, group=1)
+async def yas(client, message):
+    usr = await client.get_chat("devpokemon")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+
+
+
+
+@app.on_message(filters.regex("• JOK •") & filters.private, group=1)
+async def yas(client, message):
+    usr = await client.get_chat("G_O_OZ")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+
+
+
+@app.on_message(filters.regex("• LENDA •") & filters.private, group=1)
+async def yas(client, message):
+    usr = await client.get_chat("ELA_V1")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+
+
+
+
 @app.on_message(filters.text & filters.private, group=2)
 async def cmd(bot, msg):
 	if msg.from_user.id in SUDORS:
@@ -127,18 +298,18 @@ async def cmd(bot, msg):
 			db.set(f"{msg.from_user.id}:pinbroadcast:{bot_id}", 1)
 			db.delete(f"{msg.from_user.id}:fbroadcast:{bot_id}")
 			db.delete(f"{msg.from_user.id}:broadcast:{bot_id}")
-		if msg.text == "• نسخه اعضاء •":
+		if msg.text == "• جلب النسخة الاحتياطية •":
 			wait = await msg.reply("• انتظر قليلا ..", quote=True)
 			await bot.send_document(msg.chat.id, users_backup())
 			await wait.delete()
 			os.remove("users.txt")
-		if msg.text == "• رفع نسخه •":
+		if msg.text == "• رفع النسخة الاحتياطية •":
 			await msg.reply("• ارسل الان نسخه ملف الاعضاء", quote=True)
 			db.set(f"{msg.from_user.id}:users_up:{bot_id}", 1)
 
 @app.on_message(filters.private, group=3)
 async def forbroacasts(bot, msg):
-	if msg.from_user.id in SUDORS and msg.text != "• اذاعه •" and msg.text != "• اذاعه بالتوجيه •" and msg.text != "• اذاعه بالتثبيت •" and msg.text != "• الغاء •" and msg.text != "• رفع نسخه •" and msg.text != "• اوامر الاذاعه •" and msg.text != "• تعطيل التواصل •" and msg.text != "• تفعيل التواصل •" and msg.text != "• اوامر التواصل •" and msg.text != "• اخفاء الكيبورد •" and msg.text != "• الاحصائيات •":
+	if msg.from_user.id in SUDORS and msg.text != "• اذاعه •" and msg.text != "• اذاعه بالتوجيه •" and msg.text != "• اذاعه بالتثبيت •" and msg.text != "• الغاء •" and msg.text != "• رفع النسخة الاحتياطية •" and msg.text != "• اوامر الاذاعه •" and msg.text != "• تعطيل التواصل •" and msg.text != "• تفعيل التواصل •" and msg.text != "• اوامر التواصل •" and msg.text != "• اخفاء الكيبورد •" and msg.text != "• الاحصائيات •":
 		if db.get(f"{msg.from_user.id}:broadcast:{bot_id}"):
 			db.delete(f"{msg.from_user.id}:broadcast:{bot_id}")
 			message = await msg.reply("• جاري الإذاعة ..", quote=True)
@@ -217,4 +388,9 @@ async def twasl(bot, msg):
 				except Exception as Error:
 					await msg.reply(f"• لم يتم ارسال رسالتك بسبب: {str(Error)}", quote=True)
 					pass
+
+
+
+
+
 
