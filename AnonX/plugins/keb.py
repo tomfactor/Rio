@@ -58,24 +58,8 @@ def del_user(user_id: int):
 
 
 
-@app.on_message(filters.command("start") & filters.private)
-async def new_user(bot, msg):
-	if not is_user(msg.from_user.id):
-		add_new_user(msg.from_user.id)
-		text = f"""
-• دخل عضو جديد للبوت
 
-• الاسم : {msg.from_user.first_name}
-• منشن : {msg.from_user.mention}
-• الايدي : {msg.from_user.id}
-		"""
-		reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(f"• عدد الاعضاء: {len(get_users())}", callback_data= "users")]])
-		if len(SUDORS) > 0:
-			for user_id in SUDORS:
-				await bot.send_message(int(user_id), text, reply_markup=reply_markup)
-		else:
-			await bot.send_message(int(SUDORS[0]), text, reply_markup=reply_markup)
-@app.on_message(filters.command("tom") & filters.private, group=1)
+@app.on_message(filters.command("start") & filters.private, group=1)
 async def admins(bot, msg):
 	if msg.from_user.id in SUDORS:
 		reply_markup = ReplyKeyboardMarkup([
