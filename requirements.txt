@@ -23,4 +23,5 @@ numpy
 yt-dlp
 pyromod==1.5
 youtube-search
+asBASE
 youtube-search-python
